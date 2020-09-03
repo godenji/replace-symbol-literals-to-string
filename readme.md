@@ -1,7 +1,5 @@
 # Replace `scala.Symbol` Literals
 
-[![Build Status](https://travis-ci.com/xuwei-k/replace-symbol-literals.svg?branch=master)](https://travis-ci.com/xuwei-k/replace-symbol-literals)
-
 <https://scalacenter.github.io/scalafix/docs/rules/external-rules.html>
 
 `project/scalafix.sbt`
@@ -14,6 +12,6 @@ sbt shell
 
 ```
 > scalafixEnable
-> scalafix dependency:ReplaceSymbolLiterals@com.github.xuwei-k:replace-symbol-literals:0.1.1
-> test:scalafix dependency:ReplaceSymbolLiterals@com.github.xuwei-k:replace-symbol-literals:0.1.1
+> scalafix dependency:ReplaceSymbolLiterals@io.github.godenji:replace-symbol-literals-to-string:0.1.1
+> test:scalafix dependency:ReplaceSymbolLiterals@io.github.godenji:replace-symbol-literals-to-string:0.1.1
 ```
