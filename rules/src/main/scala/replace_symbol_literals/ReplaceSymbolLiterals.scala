@@ -8,7 +8,7 @@ class ReplaceSymbolLiterals extends SemanticRule("ReplaceSymbolLiterals") {
   override def fix(implicit doc: SemanticDocument): Patch = {
     doc.tree.collect {
       case literal @ Lit.Symbol(_) =>
-        Patch.replaceTree(literal, s"""Symbol("${literal.value.name}")""")
+        Patch.replaceTree(literal, s""""${literal.value.name}"""")
     }.foldLeft(Patch.empty)(_ + _)
   }
 
