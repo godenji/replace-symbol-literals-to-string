@@ -25,6 +25,10 @@ lazy val commonSettings = Def.settings(
       releaseStepCommand("sonatypeReleaseAll"),
       pushChanges
     ),
+    credentials ++= {
+      val creds = Path.userHome / ".sonatype" / organization.value
+      if (creds.exists) Seq(Credentials(creds)) else Nil
+    },
     pomExtra := (
       <developers>
         <developer>
