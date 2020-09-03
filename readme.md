@@ -1,4 +1,4 @@
-# Replace `scala.Symbol` Literals
+# Replace `scala.Symbol` Literals with String values
 
 <https://scalacenter.github.io/scalafix/docs/rules/external-rules.html>
 
